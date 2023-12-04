@@ -1,4 +1,4 @@
-public class Generator extends FuelEngineTool{
+public class Generator extends FuelEngineTool implements Industrial{
     private double ratedOutPower;
     private double maxOutPower;
     private String alternatorType;   //synch / asynch
@@ -52,5 +52,22 @@ public class Generator extends FuelEngineTool{
         this.alternatorType = alternatorType;
         this.outVoltage = outVoltage;
         this.cooling = cooling;
+    }
+
+    public Generator() {
+    }
+
+    public Generator(double maxOutPower) {
+        this.maxOutPower = maxOutPower;
+    }
+
+    @Override
+      public void sound() {
+            System.out.println("Ron-don-don)))");
+  }
+
+    @Override
+    public void industrialUsage() {
+        System.out.println("Yes, it's industrial");
     }
 }

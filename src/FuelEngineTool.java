@@ -53,4 +53,11 @@ public class FuelEngineTool extends Tool{
       this.engineVolume = engineVolume;
       this.engineStartup = engineStartup;
    }
+
+   public FuelEngineTool() {
+   }
+
+   @Override
+   public void sound() {
+   }
 }

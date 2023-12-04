@@ -48,4 +48,7 @@ public class HandTool extends Tool{
     public void setWeight(short weight) {
         this.weight = weight;
     }
+    @Override
+    public void sound() {
+    }
 }

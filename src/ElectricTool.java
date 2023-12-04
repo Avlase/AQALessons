@@ -1,4 +1,6 @@
-public class ElectricTool extends Tool{
+import java.sql.SQLOutput;
+
+public class ElectricTool extends Tool implements Industrial{
     private String typeOfPower;
     private short power;
     private String engineType;
@@ -47,5 +49,15 @@ public class ElectricTool extends Tool{
 
     public void setSpeedControl(boolean speedControl) {
         this.speedControl = speedControl;
+    }
+
+    public ElectricTool() {
+    }
+    @Override
+    public void sound() {
+    }
+    @Override
+    public void industrialUsage() {
+        System.out.println("Electric industrial tool");
     }
 }

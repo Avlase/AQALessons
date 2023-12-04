@@ -1,10 +1,9 @@
-public class Tool {
+public abstract class Tool {
     private String name; // name of the instrument
     private String typeOfUsage; // professional or for home usage
     private String brandName;
     private String madeIn; // Country where it's manufactured
     private double price;
-
 
     public String getName() {
         return name;
@@ -50,4 +49,10 @@ public class Tool {
         this.name = name;
         this.price = price;
     }
+
+    public Tool() {
+
+    }
+
+    public abstract void sound();
 }
