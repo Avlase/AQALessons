@@ -2,7 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Generator generator = new Generator();
+        Generator generator = new GeneratorBuilder().createGenerator();
         generator.industrialUsage();
         ElectricTool electricTool = new ElectricTool();
         electricTool.industrialUsage();
