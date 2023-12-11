@@ -1,6 +1,11 @@
-import java.sql.SQLOutput;
+package com.example.tool.type;
 
-public class ElectricTool extends Tool implements Industrial{
+import com.example.tool.Tool;
+import com.example.tool.use.Industrial;
+
+import java.util.StringJoiner;
+
+public class ElectricTool extends Tool implements Industrial {
     private String typeOfPower;
     private short power;
     private String engineType;
@@ -59,5 +64,16 @@ public class ElectricTool extends Tool implements Industrial{
     @Override
     public void industrialUsage() {
         System.out.println("Electric industrial tool");
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", ElectricTool.class.getSimpleName() + "[", "]")
+                .add("typeOfPower='" + typeOfPower + "'")
+                .add("power=" + power)
+                .add("engineType='" + engineType + "'")
+                .add("voltage=" + voltage)
+                .add("speedControl=" + speedControl)
+                .toString();
     }
 }

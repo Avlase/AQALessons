@@ -1,4 +1,8 @@
-public class FuelEngineTool extends Tool{
+package com.example.tool.type;
+
+import com.example.tool.Tool;
+
+public class FuelEngineTool extends Tool {
    private short housePower;
    private String typeOfFuel;
    private short tankCapacity;
@@ -59,5 +63,17 @@ public class FuelEngineTool extends Tool{
 
    @Override
    public void sound() {
+   }
+
+   @Override
+   public String toString() {
+      final StringBuilder sb = new StringBuilder("FuelEngineTool{");
+      sb.append("housePower=").append(housePower);
+      sb.append(", typeOfFuel='").append(typeOfFuel).append('\'');
+      sb.append(", tankCapacity=").append(tankCapacity);
+      sb.append(", engineVolume=").append(engineVolume);
+      sb.append(", engineStartup='").append(engineStartup).append('\'');
+      sb.append('}');
+      return sb.toString();
    }
 }

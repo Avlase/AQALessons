@@ -1,3 +1,5 @@
+package com.example.tool;
+
 public abstract class Tool {
     private String name; // name of the instrument
     private String typeOfUsage; // professional or for home usage
@@ -53,6 +55,17 @@ public abstract class Tool {
     public Tool() {
 
     }
-
     public abstract void sound();
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Tool{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", typeOfUsage='").append(typeOfUsage).append('\'');
+        sb.append(", brandName='").append(brandName).append('\'');
+        sb.append(", madeIn='").append(madeIn).append('\'');
+        sb.append(", price=").append(price);
+        sb.append('}');
+        return sb.toString();
+    }
 }

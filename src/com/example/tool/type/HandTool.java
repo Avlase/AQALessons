@@ -1,4 +1,8 @@
-public class HandTool extends Tool{
+package com.example.tool.type;
+
+import com.example.tool.Tool;
+
+public class HandTool extends Tool {
     private String steelGrade;
     private String usage; // metal/wood/concrete
     private String category; // Hummer/SAW/screwdriver
@@ -50,5 +54,16 @@ public class HandTool extends Tool{
     }
     @Override
     public void sound() {
+    }
+
+    @Override
+    public String toString() {
+        return "HandTool{" +
+                "steelGrade='" + steelGrade + '\'' +
+                ", usage='" + usage + '\'' +
+                ", category='" + category + '\'' +
+                ", grip='" + grip + '\'' +
+                ", weight=" + weight +
+                "} " + super.toString();
     }
 }

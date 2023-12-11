@@ -1,4 +1,9 @@
-public class Generator extends FuelEngineTool implements Industrial{
+package com.example.tool.appliance;
+
+import com.example.tool.type.FuelEngineTool;
+import com.example.tool.use.Industrial;
+
+public class Generator extends FuelEngineTool implements Industrial {
     private double ratedOutPower;
     private double maxOutPower;
     private String alternatorType;   //synch / asynch
@@ -69,5 +74,16 @@ public class Generator extends FuelEngineTool implements Industrial{
     @Override
     public void industrialUsage() {
         System.out.println("Yes, it's industrial");
+    }
+
+    @Override
+    public String toString() {
+        return "Generator{" +
+                "ratedOutPower=" + ratedOutPower +
+                ", maxOutPower=" + maxOutPower +
+                ", alternatorType='" + alternatorType + '\'' +
+                ", outVoltage=" + outVoltage +
+                ", cooling='" + cooling + '\'' +
+                '}';
     }
 }

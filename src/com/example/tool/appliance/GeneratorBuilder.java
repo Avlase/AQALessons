@@ -1,3 +1,5 @@
+package com.example.tool.appliance;
+
 public class GeneratorBuilder {
     private String name;
     private double price;
