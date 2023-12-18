@@ -40,6 +40,7 @@ public class Main {
         ElectricSaw electricSaw = null;
         var piece = data[c].split( ";");
         electricSaw = new ElectricSaw(Short.parseShort(piece[0]), piece[1], Short.parseShort(piece[2]), piece[3], Short.parseShort(piece[4]));
+        System.out.println(electricSaw);
     }
 
     }

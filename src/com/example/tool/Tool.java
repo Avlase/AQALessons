@@ -5,6 +5,18 @@ public abstract class Tool {
     private String typeOfUsage; // professional or for home usage
     private String brandName;
     private String madeIn; // Country where it's manufactured
+
+    @Override
+    public String toString() {
+        return "Tool{" +
+                "name='" + name + '\'' +
+                ", typeOfUsage='" + typeOfUsage + '\'' +
+                ", brandName='" + brandName + '\'' +
+                ", madeIn='" + madeIn + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     private double price;
 
     public String getName() {
@@ -58,15 +70,4 @@ public abstract class Tool {
     }
     public abstract void sound();
 
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("Tool{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", typeOfUsage='").append(typeOfUsage).append('\'');
-        sb.append(", brandName='").append(brandName).append('\'');
-        sb.append(", madeIn='").append(madeIn).append('\'');
-        sb.append(", price=").append(price);
-        sb.append('}');
-        return sb.toString();
-    }
 }

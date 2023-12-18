@@ -89,6 +89,6 @@ public class ElectricTool extends Tool implements Industrial {
                 ", engineType='" + engineType + '\'' +
                 ", voltage=" + voltage +
                 ", speedControl=" + speedControl +
-                '}';
+                "} " + super.toString();
     }
 }
