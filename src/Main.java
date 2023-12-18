@@ -36,12 +36,15 @@ public class Main {
     public static void main(String[] args) {
 
     String[] data = readFileUsingBufferReader(FILE_NAME);
-    for (int c = 1; c < data.length; c++){
-        ElectricSaw electricSaw = null;
-        var piece = data[c].split( ";");
-        electricSaw = new ElectricSaw(Short.parseShort(piece[0]), piece[1], Short.parseShort(piece[2]), piece[3], Short.parseShort(piece[4]));
-        System.out.println(electricSaw);
-    }
+        addSaw(data);
 
+    }
+    private static void addSaw(String[] data) {
+        for (int c = 1; c < data.length; c++){
+            ElectricSaw electricSaw = null;
+            var piece = data[c].split( ";");
+            electricSaw = new ElectricSaw(Short.parseShort(piece[0]), piece[1], Short.parseShort(piece[2]), piece[3], Short.parseShort(piece[4]));
+            System.out.println(electricSaw);
+        }
     }
 }
