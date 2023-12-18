@@ -9,24 +9,13 @@ public class ElectricSaw extends ElectricTool {
     public short getDiskDia() {
         return diskDia;
     }
-
     public void setDiskDia(short diskDia) {
         this.diskDia = diskDia;
     }
-
     public ElectricSaw(short diskDia, String typeOfPower, short power, String engineType, short voltage) {
         super(typeOfPower, power, engineType, voltage);
         this.diskDia = diskDia;
     }
-
-    public ElectricSaw(String name, double price, short diskDia) {
-        super(name, price);
-        this.diskDia = diskDia;
-    }
-    public ElectricSaw(short diskDia) {
-        this.diskDia = diskDia;
-    }
-
     @Override
     public String toString() {
         return "ElectricSaw{" +
@@ -34,8 +23,4 @@ public class ElectricSaw extends ElectricTool {
                 "} " + super.toString();
     }
 
-    @Override
-    public void industrialUsage() {
-        super.industrialUsage();
-    }
 }
