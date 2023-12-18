@@ -1,0 +1,4 @@
+diskDia;typeOfPower;power;engineType;voltage
+185;ElectricNetwork;1700;Brushes;220
+125;ElectricNetwork;1200;Brushes;220
+220;Battery;1200;Brushless;48

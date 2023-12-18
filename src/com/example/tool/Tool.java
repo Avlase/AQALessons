@@ -52,6 +52,7 @@ public abstract class Tool {
         this.price = price;
     }
 
+
     public Tool() {
 
     }

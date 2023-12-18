@@ -56,8 +56,23 @@ public class ElectricTool extends Tool implements Industrial {
         this.speedControl = speedControl;
     }
 
+    public ElectricTool(String typeOfPower, short power, String engineType) {
+        super();
+        this.typeOfPower = typeOfPower;
+        this.power = power;
+        this.engineType = engineType;
+    }
+
+    public ElectricTool(String typeOfPower, short power, String engineType, short voltage) {
+        this.typeOfPower = typeOfPower;
+        this.power = power;
+        this.engineType = engineType;
+        this.voltage = voltage;
+    }
+
     public ElectricTool() {
     }
+
     @Override
     public void sound() {
     }
@@ -68,12 +83,12 @@ public class ElectricTool extends Tool implements Industrial {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", ElectricTool.class.getSimpleName() + "[", "]")
-                .add("typeOfPower='" + typeOfPower + "'")
-                .add("power=" + power)
-                .add("engineType='" + engineType + "'")
-                .add("voltage=" + voltage)
-                .add("speedControl=" + speedControl)
-                .toString();
+        return "ElectricTool{" +
+                "typeOfPower='" + typeOfPower + '\'' +
+                ", power=" + power +
+                ", engineType='" + engineType + '\'' +
+                ", voltage=" + voltage +
+                ", speedControl=" + speedControl +
+                '}';
     }
 }
