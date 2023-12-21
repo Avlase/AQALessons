@@ -10,10 +10,10 @@ import java.util.Arrays;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
-    private static final String FILE_NAME = "resources/electricSaw.csv";
+    private static final String FILE_NAME = "resources/electricSawUpd.csv";
 
     static String[] readFileUsingBufferReader(String filename) {
-        ArrayList<String> data = new ArrayList<String>();
+        ArrayList<String> data = new ArrayList<>();
         FileReader reader;
         try {
             reader = new FileReader(filename);
@@ -33,12 +33,6 @@ public class Main {
         }
         return Arrays.copyOf(data.toArray(), data.size(), String[].class);
     }
-    public static void main(String[] args) {
-
-    String[] data = readFileUsingBufferReader(FILE_NAME);
-        addSaw(data);
-
-    }
     private static void addSaw(String[] data) {
         for (int c = 1; c < data.length; c++){
             ElectricSaw electricSaw = null;
@@ -46,5 +40,9 @@ public class Main {
             electricSaw = new ElectricSaw(Short.parseShort(piece[0]), piece[1], Short.parseShort(piece[2]), piece[3], Short.parseShort(piece[4]));
             System.out.println(electricSaw);
         }
+    }
+    public static void main(String[] args) {
+        String[] data = readFileUsingBufferReader(FILE_NAME);
+        addSaw(data);
     }
 }
