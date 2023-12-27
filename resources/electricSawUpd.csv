@@ -1,113 +1,113 @@
-diskDia;typeOfPower;power;engineType;voltage
-100;Electrical Network;450;Brushes;220
-100;Electrical Network;950;Brushes;220
-100;Electrical Network;1550;Brushes;220
-100;Electrical Network;2150;Brushes;220
-100;Electrical Network;3500;Brushes;380
-100;Battery;450;Brushes;12
-100;Battery;450;Brushless;12
-100;Battery;950;Brushless;12
-100;Battery;950;Brushes;12
-100;Battery;1550;Brushes;12
-100;Battery;1550;Brushless;12
-100;Battery;2150;Brushes;12
-100;Battery;2150;Brushless;12
-100;Battery;1800;Brushless;24
-115;Electrical Network;450;Brushes;220
-115;Electrical Network;950;Brushes;220
-115;Electrical Network;1550;Brushes;220
-115;Electrical Network;2150;Brushes;220
-115;Electrical Network;3500;Brushes;380
-115;Battery;450;Brushes;12
-115;Battery;450;Brushless;12
-115;Battery;950;Brushless;12
-115;Battery;950;Brushes;12
-115;Battery;1550;Brushes;12
-115;Battery;1550;Brushless;12
-115;Battery;2150;Brushes;12
-115;Battery;2150;Brushless;12
-115;Battery;1800;Brushless;24
-125;Electrical Network;450;Brushes;220
-125;Electrical Network;950;Brushes;220
-125;Electrical Network;1550;Brushes;220
-125;Electrical Network;2150;Brushes;220
-125;Electrical Network;3500;Brushes;380
-125;Battery;450;Brushes;12
-125;Battery;450;Brushless;12
-125;Battery;950;Brushless;12
-125;Battery;950;Brushes;12
-125;Battery;1550;Brushes;12
-125;Battery;1550;Brushless;12
-125;Battery;2150;Brushes;12
-125;Battery;2150;Brushless;12
-125;Battery;1800;Brushless;24
-150;Electrical Network;450;Brushes;220
-150;Electrical Network;950;Brushes;220
-150;Electrical Network;1550;Brushes;220
-150;Electrical Network;2150;Brushes;220
-150;Electrical Network;3500;Brushes;380
-150;Battery;450;Brushes;12
-150;Battery;450;Brushless;12
-150;Battery;950;Brushless;12
-150;Battery;950;Brushes;12
-150;Battery;1550;Brushes;12
-150;Battery;1550;Brushless;12
-150;Battery;2150;Brushes;12
-150;Battery;2150;Brushless;12
-150;Battery;1800;Brushless;24
-180;Electrical Network;450;Brushes;220
-180;Electrical Network;950;Brushes;220
-180;Electrical Network;1550;Brushes;220
-180;Electrical Network;2150;Brushes;220
-180;Electrical Network;3500;Brushes;380
-180;Battery;450;Brushes;12
-180;Battery;450;Brushless;12
-180;Battery;950;Brushless;12
-180;Battery;950;Brushes;12
-180;Battery;1550;Brushes;12
-180;Battery;1550;Brushless;12
-180;Battery;2150;Brushes;12
-180;Battery;2150;Brushless;12
-180;Battery;1800;Brushless;24
-220;Electrical Network;450;Brushes;220
-220;Electrical Network;950;Brushes;220
-220;Electrical Network;1550;Brushes;220
-220;Electrical Network;2150;Brushes;220
-220;Electrical Network;3500;Brushes;380
-220;Battery;450;Brushes;12
-220;Battery;450;Brushless;12
-220;Battery;950;Brushless;12
-220;Battery;950;Brushes;12
-220;Battery;1550;Brushes;12
-220;Battery;1550;Brushless;12
-220;Battery;2150;Brushes;12
-220;Battery;2150;Brushless;12
-220;Battery;1800;Brushless;24
-230;Electrical Network;450;Brushes;220
-230;Electrical Network;950;Brushes;220
-230;Electrical Network;1550;Brushes;220
-230;Electrical Network;2150;Brushes;220
-230;Electrical Network;3500;Brushes;380
-230;Battery;450;Brushes;12
-230;Battery;450;Brushless;12
-230;Battery;950;Brushless;12
-230;Battery;950;Brushes;12
-230;Battery;1550;Brushes;12
-230;Battery;1550;Brushless;12
-230;Battery;2150;Brushes;12
-230;Battery;2150;Brushless;12
-230;Battery;1800;Brushless;24
-300;Electrical Network;450;Brushes;220
-300;Electrical Network;950;Brushes;220
-300;Electrical Network;1550;Brushes;220
-300;Electrical Network;2150;Brushes;220
-300;Electrical Network;3500;Brushes;380
-300;Battery;450;Brushes;12
-300;Battery;450;Brushless;12
-300;Battery;950;Brushless;12
-300;Battery;950;Brushes;12
-300;Battery;1550;Brushes;12
-300;Battery;1550;Brushless;12
-300;Battery;2150;Brushes;12
-300;Battery;2150;Brushless;12
-300;Battery;1800;Brushless;24
+id;diskDia;typeOfPower;power;engineType;voltage
+1;100;Electrical Network;450;Brushes;220
+2;100;Electrical Network;950;Brushes;220
+3;100;Electrical Network;1550;Brushes;220
+4;100;Electrical Network;2150;Brushes;220
+5;100;Electrical Network;3500;Brushes;380
+6;100;Battery;450;Brushes;12
+7;100;Battery;450;Brushless;12
+8;100;Battery;950;Brushless;12
+9;100;Battery;950;Brushes;12
+10;100;Battery;1550;Brushes;12
+11;100;Battery;1550;Brushless;12
+12;100;Battery;2150;Brushes;12
+13;100;Battery;2150;Brushless;12
+14;100;Battery;1800;Brushless;24
+15;115;Electrical Network;450;Brushes;220
+16;115;Electrical Network;950;Brushes;220
+17;115;Electrical Network;1550;Brushes;220
+18;115;Electrical Network;2150;Brushes;220
+19;115;Electrical Network;3500;Brushes;380
+20;115;Battery;450;Brushes;12
+21;115;Battery;450;Brushless;12
+22;115;Battery;950;Brushless;12
+23;115;Battery;950;Brushes;12
+24;115;Battery;1550;Brushes;12
+25;115;Battery;1550;Brushless;12
+26;115;Battery;2150;Brushes;12
+27;115;Battery;2150;Brushless;12
+28;115;Battery;1800;Brushless;24
+29;125;Electrical Network;450;Brushes;220
+30;125;Electrical Network;950;Brushes;220
+31;125;Electrical Network;1550;Brushes;220
+32;125;Electrical Network;2150;Brushes;220
+33;125;Electrical Network;3500;Brushes;380
+34;125;Battery;450;Brushes;12
+35;125;Battery;450;Brushless;12
+36;125;Battery;950;Brushless;12
+37;125;Battery;950;Brushes;12
+38;125;Battery;1550;Brushes;12
+39;125;Battery;1550;Brushless;12
+40;125;Battery;2150;Brushes;12
+41;125;Battery;2150;Brushless;12
+42;125;Battery;1800;Brushless;24
+43;150;Electrical Network;450;Brushes;220
+44;150;Electrical Network;950;Brushes;220
+45;150;Electrical Network;1550;Brushes;220
+46;150;Electrical Network;2150;Brushes;220
+47;150;Electrical Network;3500;Brushes;380
+48;150;Battery;450;Brushes;12
+49;150;Battery;450;Brushless;12
+50;150;Battery;950;Brushless;12
+51;150;Battery;950;Brushes;12
+52;150;Battery;1550;Brushes;12
+53;150;Battery;1550;Brushless;12
+54;150;Battery;2150;Brushes;12
+55;150;Battery;2150;Brushless;12
+56;150;Battery;1800;Brushless;24
+57;180;Electrical Network;450;Brushes;220
+58;180;Electrical Network;950;Brushes;220
+59;180;Electrical Network;1550;Brushes;220
+60;180;Electrical Network;2150;Brushes;220
+61;180;Electrical Network;3500;Brushes;380
+62;180;Battery;450;Brushes;12
+63;180;Battery;450;Brushless;12
+64;180;Battery;950;Brushless;12
+65;180;Battery;950;Brushes;12
+66;180;Battery;1550;Brushes;12
+67;180;Battery;1550;Brushless;12
+68;180;Battery;2150;Brushes;12
+69;180;Battery;2150;Brushless;12
+70;180;Battery;1800;Brushless;24
+71;220;Electrical Network;450;Brushes;220
+72;220;Electrical Network;950;Brushes;220
+73;220;Electrical Network;1550;Brushes;220
+74;220;Electrical Network;2150;Brushes;220
+75;220;Electrical Network;3500;Brushes;380
+76;220;Battery;450;Brushes;12
+77;220;Battery;450;Brushless;12
+78;220;Battery;950;Brushless;12
+79;220;Battery;950;Brushes;12
+80;220;Battery;1550;Brushes;12
+81;220;Battery;1550;Brushless;12
+82;220;Battery;2150;Brushes;12
+83;220;Battery;2150;Brushless;12
+84;220;Battery;1800;Brushless;24
+85;230;Electrical Network;450;Brushes;220
+86;230;Electrical Network;950;Brushes;220
+87;230;Electrical Network;1550;Brushes;220
+88;230;Electrical Network;2150;Brushes;220
+89;230;Electrical Network;3500;Brushes;380
+90;230;Battery;450;Brushes;12
+91;230;Battery;450;Brushless;12
+92;230;Battery;950;Brushless;12
+93;230;Battery;950;Brushes;12
+94;230;Battery;1550;Brushes;12
+95;230;Battery;1550;Brushless;12
+96;230;Battery;2150;Brushes;12
+97;230;Battery;2150;Brushless;12
+98;230;Battery;1800;Brushless;24
+99;300;Electrical Network;450;Brushes;220
+100;300;Electrical Network;950;Brushes;220
+101;300;Electrical Network;1550;Brushes;220
+102;300;Electrical Network;2150;Brushes;220
+103;300;Electrical Network;3500;Brushes;380
+104;300;Battery;450;Brushes;12
+105;300;Battery;450;Brushless;12
+106;300;Battery;950;Brushless;12
+107;300;Battery;950;Brushes;12
+108;300;Battery;1550;Brushes;12
+109;300;Battery;1550;Brushless;12
+110;300;Battery;2150;Brushes;12
+111;300;Battery;2150;Brushless;12
+112;300;Battery;1800;Brushless;24

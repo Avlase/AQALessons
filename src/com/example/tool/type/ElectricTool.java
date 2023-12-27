@@ -56,11 +56,12 @@ public class ElectricTool extends Tool implements Industrial {
         this.speedControl = speedControl;
     }
 
-    public ElectricTool(String typeOfPower, short power, String engineType) {
-        super();
+    public ElectricTool(short id, String typeOfPower, short power, String engineType, short voltage) {
+        super(id);
         this.typeOfPower = typeOfPower;
         this.power = power;
         this.engineType = engineType;
+        this.voltage = voltage;
     }
 
     public ElectricTool(String typeOfPower, short power, String engineType, short voltage) {
@@ -88,7 +89,6 @@ public class ElectricTool extends Tool implements Industrial {
                 ", power=" + power +
                 ", engineType='" + engineType + '\'' +
                 ", voltage=" + voltage +
-                ", speedControl=" + speedControl +
                 "} " + super.toString();
     }
 }

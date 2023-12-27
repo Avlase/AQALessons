@@ -12,10 +12,11 @@ public class ElectricSaw extends ElectricTool {
     public void setDiskDia(short diskDia) {
         this.diskDia = diskDia;
     }
-    public ElectricSaw(short diskDia, String typeOfPower, short power, String engineType, short voltage) {
-        super(typeOfPower, power, engineType, voltage);
+    public ElectricSaw(short id, short diskDia, String typeOfPower, short power, String engineType, short voltage) {
+        super(id, typeOfPower, power, engineType, voltage);
         this.diskDia = diskDia;
     }
+
     @Override
     public String toString() {
         return "ElectricSaw{" +

@@ -6,18 +6,12 @@ public abstract class Tool {
     private String brandName;
     private String madeIn; // Country where it's manufactured
 
-    @Override
-    public String toString() {
-        return "Tool{" +
-                "name='" + name + '\'' +
-                ", typeOfUsage='" + typeOfUsage + '\'' +
-                ", brandName='" + brandName + '\'' +
-                ", madeIn='" + madeIn + '\'' +
-                ", price=" + price +
-                '}';
-    }
-
+    private short id;
     private double price;
+
+    public Tool(short id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -59,11 +53,24 @@ public abstract class Tool {
         this.price = price;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(short id) {
+        this.id = id;
+    }
+
     public Tool(String name, double price) {
         this.name = name;
         this.price = price;
     }
-
+    @Override
+    public String toString() {
+        return "Tool{" +
+                "id=" + id +
+                '}';
+    }
 
     public Tool() {
 
