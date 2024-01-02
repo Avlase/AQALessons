@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.sql.SQLOutput;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.time.Year;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -94,10 +95,10 @@ public class Main {
             System.out.println("Streams duration " + dur3);
             System.out.println("----------------");
 
-            List<Integer> duration = new ArrayList<>();
-            duration.add((int)dur1);
-            duration.add((int)dur2);
-            duration.add((int)dur3);
+            List<Long> duration = new ArrayList<>();
+            duration.add(dur1);
+            duration.add(dur2);
+            duration.add(dur3);
 
             Collections.sort(duration);
             System.out.println("Sorted durations " + duration);
