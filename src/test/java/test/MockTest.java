@@ -6,14 +6,12 @@ import okhttp3.OkHttpClient;
 import com.github.tomakehurst.wiremock.WireMockServer;
 import okhttp3.Request;
 import okhttp3.Response;
-import org.apache.commons.lang3.builder.ToStringExclude;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
 
 public class MockTest {
     int port = 9090;
