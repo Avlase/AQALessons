@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
 
 public class MockTest {
     int port = 9090;
@@ -59,6 +60,21 @@ public class MockTest {
                 .build();
         try (Response response = client.newCall(request).execute()) {
             Assert.assertEquals(response.header("cache-control"), headerValue, "cache-control header should have value " + headerValue);
+        }
+    }
+
+    @Test
+    public void checkDellay() throws IOException {
+        String headerValue = "no-transform";
+        var request = new Request.Builder()
+                .url(fakeUrl)
+                .build();
+        var start = System.currentTimeMillis();
+        try (Response response = client.newCall(request).execute()) {
+            var code = response.code();
+            var dur = System.currentTimeMillis() - start;
+            Assert.assertTrue(dur > 10 && dur < 1200);
+            Assert.assertEquals(code, responseCode, "Response should be " + responseCode + " but got " + code);
         }
     }
 }
