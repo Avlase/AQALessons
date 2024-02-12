@@ -4,19 +4,20 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.SQLOutput;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.Year;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+import java.util.Vector;
+import java.util.logging.Level;
 import java.util.stream.Stream;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.logging.Logger;
 public class Main {
-    private static final String FILE_NAME = "resources/electricSawUpd.csv";
+    private static Logger logger;
+    private static final String FILE_NAME = "src/main/resources/electricSawUpd.csv";
 
     static String[] readFileUsingBufferReader(String filename) {
         ArrayList<String> data = new ArrayList<>();
@@ -46,21 +47,31 @@ public class Main {
             var piece = data[c].split(";");
             electricSaw = new ElectricSaw(Short.parseShort(piece[0]), Short.parseShort(piece[1]), piece[2], Short.parseShort(piece[3]), piece[4], Short.parseShort(piece[5]));
             electricSawList.add(electricSaw);
+            logger.log(Level.INFO, "Object added: " + electricSaw);
         }
         return electricSawList;
     }
         public static void main (String[]args){
-            Vector<ElectricSaw> electricSaws = new Vector<>();
+            System.setProperty("java.util.logging.config.file", System.getenv("CONFIG_FILE_NAME"));
+            logger = Logger.getLogger(Main.class.getName());
+
+            Vector<ElectricSaw> electricSaws;
             var start = System.currentTimeMillis();
+
+            logger.log(Level.CONFIG, "Start reading data from: " + FILE_NAME);
             String[] data = readFileUsingBufferReader(FILE_NAME);
             var dur1 = System.currentTimeMillis() - start;
             System.out.println("Duration(read file) " + dur1);
             System.out.println("----------------");
             var start2 = System.currentTimeMillis();
+
             electricSaws = addSaw(data);
+            logger.log(Level.SEVERE, "Objects list" + addSaw(data));
+
             var dur2 = System.currentTimeMillis() - start2;
             System.out.println("Parse data and add object " + dur2);
             System.out.println("----------------");
+            logger.log(Level.CONFIG, "Number of added objects: " + electricSaws.size());
             var start3 = System.currentTimeMillis();
 
             Stream<ElectricSaw> stream = electricSaws.stream();
