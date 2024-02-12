@@ -46,7 +46,6 @@ public class Main {
         return electricSawList;
     }
         public static void main (String[]args){
-       // System.setProperty("java.util.logging.config.file", "src/main/resources/logging.properties");
             System.setProperty("java.util.logging.config.file", System.getenv("CONFIG_FILE_NAME"));
             logger = Logger.getLogger(Main.class.getName());
 
